@@ -13,15 +13,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        android:layout_marginBottom="87dp"
-        android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:id="@+id/textview1"
+        android:allowUndo="false"
+        android:textSize="32dp" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="New Text"
+        android:id="@+id/textview2"
+        android:layout_below="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:textSize="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textview3"
+        android:textSize="32dp"
+        android:layout_below="@+id/textview2"
+        android:layout_alignLeft="@+id/textview2"
+        android:layout_alignStart="@+id/textview2"
+        android:layout_marginTop="34dp" />
+
 </RelativeLayout>
